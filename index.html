@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MI TIENDA ONLINE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="./public/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>TIENDA ONLINE</h1>
+    <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+  </header>
+
+  <main id="prodDisplay">
+    </div>
+  </main>
+
+  <div class="modal-container">
+    <div class="modal-cart">
+      <h3>Carrito</h3>
+      <button id="btn-close-cart"><i class="fas fa-times-circle"></i></button>
+      <div id="cart-container">
+
+      </div>
+      <p class="precioProducto">Precio total: $<span id="totalPrice"></span></p>
+      <div class="modal-footer">
+        <br>
+      </div>
+      <section class="modal hidden">
+        <div class="flex">
+          <button class="btn-close">Agregar ítems</button>
+        </div>
+        <div>
+          <h4>DATOS DE LA TARJETA</h4>
+          <p>
+            Por favor, ingrese los datos de su tarjeta y un mail de contacto para coordinar el envío
+          </p>
+          <section class="checkout-form">
+            <form action="" method="get" id="checkout">
+              <div>
+                <input type="number" id="card-nums" name="card-nums" placeholder="Ingrese los números de su tarjeta">
+                <input type="number" id="card-exp" name="card-exp" placeholder="Ingrese la fecha de vencimiento">
+                <input type="number" id="card-ccv" name="card-ccv" placeholder="Ingrese el código de seguridad">
+                <input type="email" id="userEmail" placeholder="Ingrese su email">
+                <button type="submit" class="btn" id="paymentSuccess">CONFIRMAR EL PAGO</button>
+              </div>
+            </div>
+            </form>
+          </section>
+
+      </section>
+      <div class="overlay hidden"></div>
+      <button class="btn btn-open">Finalizar y Pagar</button>
+    </div>
+
+    <script src="./data/stock.js"></script>
+    <script src="./js/getData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+</body>
+<footer></footer>
+</body>
+
+</html>
