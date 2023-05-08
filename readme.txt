@@ -1,1 +1,1 @@
-Cuarta entrega del trabajo del curso de JavaScript en Coderhouse.
+Cuarta entrega del trabajo final del curso de JavaScript en Coderhouse.
